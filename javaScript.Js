@@ -19,7 +19,7 @@ var senhainput = document.getElementById('senha');
 var icone = document.getElementById('cadeado')
 let senhavisivel = false
 
-mostrarsenha.addEventListener("click", function() {
+mostrarsenha.addEventListener("click", function(event) {
     event.preventDefault();
     if (senhainput.type == "password") {
         senhainput.type = "text";

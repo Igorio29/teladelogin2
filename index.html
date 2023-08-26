@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Igor">
@@ -9,20 +10,23 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
 
     <form action="">
         <h1 class="titulo">Login</h1>
         <div>
-        <label for="nome">
-            <p class="label">Usuario</p>
-            <input type="text" id="nome" required placeholder="">
-        </label>
-    </div>
+            <label for="nome">
+
+                <input type="text" id="nome" required placeholder="Usuario">
+            </label>
+        </div>
         <label for="senha">
-            <p>Senha</p>
-            <input type="password" id="senha" required placeholder="">
-            <button id="MostrarSenha" class="botao"><img src="./src/1001008.png" alt="" id="cadeado" class="img"></button>
+            <div class="botaodesenha">
+                <input type="password" id="senha" required placeholder="Senha">
+                <button id="MostrarSenha" class="botao"><img src="./src/1001008.png" alt="Mostrar Senha" id="cadeado"
+                        class="img"></button>
+            </div>
         </label>
 
         <input type="submit" id="Enviar" value="Entrar" class="Enviar" onclick="logar (); return false">
@@ -32,4 +36,5 @@
 
     </script>
 </body>
+
 </html>

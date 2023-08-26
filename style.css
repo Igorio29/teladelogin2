@@ -9,6 +9,7 @@ body{
 
 form {
     background-color: rgba(224, 224, 224, 0.753);
+    align-items: center;
     padding: 50px;
     margin: 0  35%;
     border-radius: 5%;
@@ -18,17 +19,20 @@ form {
 
 
 label {
+    display: flex;
+    flex-direction: row;
     margin: 10px 0 10px;
-    text-align: left;
+    text-align: center;
     font-size: 15px;
-    margin-left: 55px;
 }
-
+input {
+    margin-left: 0%;
+}
 .label {
     margin: 10px 0 10px;
     text-align: left;
     font-size: 15px;
-    margin-left: 55px;
+    margin-left: 19%;
 }
 
 h1 {
@@ -64,9 +68,29 @@ h1 {
     background-color: rgba(240, 248, 255, 0);
     border-color: rgba(240, 248, 255, 0);
     cursor: pointer;
-
+    position: absolute;
+    float: right;
+    margin-left: 0%;
 }
+
+.botaodasenha {
+    display: flex;
+    flex-direction: row;
+}
+
 #mensagem {
     display: none;
     color: red;
+}
+
+@media (max-width: 1020px) {
+    form {
+        margin: 0 30%;
+    }
+}
+
+@media (max-width: 768px) {
+    form {
+        margin: 0 10%;
+    }
 }
