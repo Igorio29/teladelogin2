@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Igor">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de login</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <form action="">
+        <h1 class="titulo">Login</h1>
+        <div>
+        <label for="nome">
+            <p class="label">Usuario</p>
+            <input type="text" id="nome" required placeholder="">
+        </label>
+    </div>
+        <label for="senha">
+            <p>Senha</p>
+            <input type="password" id="senha" required placeholder="">
+            <button id="MostrarSenha" class="botao"><img src="./src/1001008.png" alt="" id="cadeado" class="img"></button>
+        </label>
+
+        <input type="submit" id="Enviar" value="Entrar" class="Enviar" onclick="logar (); return false">
+    </form>
+    <div id="mensagem">Acesso Negado</div>
+    <script src="javaScript.Js">
+
+    </script>
+</body>
+</html>
